@@ -2301,6 +2301,10 @@ body[data-theme="dark"] #mainMenu .menuGroup13 button:hover{background:#5d5076}
 body[data-theme="dark"] #mainMenu #menuSearch13{background:#413b54;color:#fff;border-color:#9180aa}
 body[data-theme="dark"] #mainMenu #menuSearch13::placeholder{color:#c9bed9;opacity:1}
 body[data-theme="dark"] #mainMenu #deleteAccountButton{color:#ffb8bf !important}
+/* Menyfix 2: låt öppnade grupper växa utan att klippas av */
+#mainMenu{max-height:none;overflow:visible}
+#mainMenu .menuGroup13{flex:0 0 auto;overflow:visible;min-height:0}
+#mainMenu .menuGroup13[open]{height:auto}
 #mainMenu .menuGroup13[hidden],#mainMenu .menuGroup13 button[hidden]{display:none !important}
 </style>
 <script>
